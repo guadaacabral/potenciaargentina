@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head> <!---Esto no se ve en la página, solo está para agregar información de estilo, etc.--->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Potencia Argentina</title> <!---Nombre de la página--->
+	<link rel="stylesheet" href="CSS/main.css"/> <!---Hoja de estilo CSS--->
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!--- Fuente Bebas--->
+</head>
+
+<body class="grid">
+	<header id="sup" class="header"> <!--- Encabezado con las RRSS lateral derecho--->
+			<a href="#" class="header__falpo">FALPo</a>
+			<nav class="header__redes">	
+				<a href="https://www.instagram.com/powerlifting.argentina/">
+				<button>Instagram</button> </a>
+					<a href="https://www.facebook.com/powerlifting.argentina/">
+				<button>Facebook</button> </a>
+					<a href="https://www.youtube.com/channel/UCholoYBjvMEPDRFW-fMVM2Q">
+				<button>Youtube</button> </a>
+					<a href="mailto:jose@powerlifting.com.ar">
+				<button>E-mail</button></a>
+			</nav>
+	</header>
+
+	<div id="titulo" class="header__logo">
+		<img src="./Media/logo_falpo.png" width=160 height=160/> <!---lateral--->
+		<h1 class="header__logo__titulo"> Federación Argentina de Levantamientos de Potencia </h1>
+	</div>
+
+	<nav id="menu"> <!---Cada botón de este menú centrado será un botón desplegable hacia otra página de la web--->
+		<ul class="menu--display menu__flex">
+			<li class="menu__li--index">Acerca de FALPo
+				<ul class="menu--display">				
+				<li> <a href="Acerca_de_FALPo/Acerca-de-falpo.html" class="menu__li__a">Misión, visión y valores</a> 	</li>
+				<li> <a href="Acerca_de_FALPo/comision_directiva.html" class="menu__li__a">Comisión Directiva</a>
+				</li>
+				</ul>
+			</li>
+			<li class="menu__li--index">Asociaciones
+				<ul class="menu--display">
+				<li> <a href="Asociaciones/amelpo.html" class="menu__li__a">AMelPo</a> </li>
+				<li> <a href="Asociaciones/asalp.html" class="menu__li__a">ASaLP</a> </li>
+				<li> <a href="Asociaciones/apotdf.html" class="menu__li__a">APoTDF</a> </li>
+				<li> <a href="Asociaciones/abp.html" class="menu__li__a">ABP</a> </li>
+				<li> <a href="Asociaciones/acefis.html" class="menu__li__a">ACeFiS</a> </li>
+				<li> <a href="Asociaciones/asdtm.html" class="menu__li__a">ASDTM</a> </li>
+				</ul>
+			</li>
+			<li class="menu__li--index">Calendario
+				<ul class="menu--display">
+				<li> <a href="Acerca_de_FALPo/inscripcion_nacional.html" class="menu__li__a">Inscripción al nacional</a> </li>
+				<li> <a href="calendario_anual.html" class="menu__li__a">Calendario anual</a> </li>
+				</ul>
+			</li>
+			<li class="menu__li--index"> <a href="resultados.html" class="menu__li__a">Resultados</a> </li>
+			<li class="menu__li--index"> <a href="reglas.html" class="menu__li__a">Reglas</a> </li>
+			<li class="menu__li--index"> <a href="Media.html" class="menu__li__a">Media</a> </li>
+		</ul>
+	</nav>
+
+	<div id="lateral"> <!---Barra lateral izquierda con logos--->
+		<img src="./Media/logo_ipf.png" width=130/>
+		<h3>Federación Internacional de Powerlifting</h3>
+		<h3>-IPF-</h3>
+		<br>
+		<br>
+		<img src="./Media/logo_fesupo.jpg" width=110/>
+		<h3>Federación Sudamericana de Powerlifting</h3>
+		<h3>-FESUPO-</h3>
+		<br>
+		<br>
+		<img src="./Media/logo_wada.jpg" width=130/>
+		<h3>Agencia Internacional Antidopaje</h3>
+		<h3>-WADA AMA-</h3>
+	</div>
+
+	<section id="central"> <!---Zona central de la página--->
+		<video src="./Media/video_nac.mp4" autobuffer autoloop loop controls height="450px">
+			<p>Tu navegador no soporta el elemento</p>
+		</video>
+		<a href="./Documentos/InvitacionNac.pdf">Invitación Oficial Nacional 2021 </a>
+		<a href="./Documentos/NominacionNac.xl"> Nominación al Nacional 2021</a>
+	</section>
+
+	<aside id="pat"> <!---Lateral--->
+		<p>Patrocinadores</p>
+		<br>
+		<img src="./Media/gerseg.jpg" height="150px"/>
+		<a href="http://www.instagram.com/gersegpowerlifting">Instagram oficial: @gerserpowerlifting</a>
+		<br>
+		<img src="./Media/barras.jpg" height="150px" />
+		<a href="mailto:jose@powerlifting.com.ar">Mensaje a José Inguanti</a>
+	</aside>
+
+	<footer id="falpo"> <!---Pie de página-->
+		<h3>Federación Argentina de Levantamientos de Potencia - 1983</h3>
+	</footer>
+
+</body>
+</html>

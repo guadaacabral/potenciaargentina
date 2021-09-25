@@ -1,0 +1,92 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inscripción al Nacional 2021</title>
+	<link rel="stylesheet" href="../CSS/secundarias.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav>
+		<ul class="menu__ul">
+			<li class="menu__li"> <a href="../index.html">Inicio</a> </li>
+		</ul>
+	</nav>
+
+	<h1 class="titulo">Inscripción al Nacional 2021</h1>
+	<h2 align="center">Buenos Aires - 19 al 21 de Noviembre</h2>
+
+	<form class="back_azul">
+	<fieldset>
+		<legend>Inscripción:</legend>
+		<label for="fname">Nombres:</label>
+		<input type="text" id="fname" name="fname">
+
+		<label for="lname">Apellidos:</label>
+		<input type="text" id="lname" name="lname">
+	<br>
+		<h4>Sexo:</h4>
+		<div>Femenino</div>
+		<input type="radio" name="sexo" value="Femenino">
+		<div>Masculino</div>
+		<input type="radio" name="sexo" value="Masculino">
+	<br>
+		<h4> Correo electrónico:</h4>
+		<input type="email" name="email" placeholder="nombre@ejemplo.com">
+	<br>
+		<h4>Categoría de edad:</h4>
+		<select name="Categoría de edad">
+			<option value="Sjr">Sub-Junior (14-18 años)</option>
+			<option value="Jrr">Junior (18-23 años)</option>
+			<option value="Open">Open (Sin Límites)</option>
+			<option value="MI">Máster 1 (40-49 años)</option>
+			<option value="MII">Máster 2 (50-59 años)</option>
+			<option value="MIII">Máster 3 (60-69 años)</option>
+			<option value="MIIII">Máster 4 (70 años en adelante)</option>
+		</select>
+	<br>
+		<!---Categoría de peso se divide según si es hombre o mujer
+			
+		<h4>Categoría de peso Femenina:</h4>
+		<select name="Categoría de peso Fem">
+			<option value="43">-43kg (hasta 43kg, solo SJr y Jr)</option>
+			<option value="47">-47kg (hasta 47kg)</option>
+			<option value="52">-52kg (47,1 a 52kg)</option>
+			<option value="57">-57kg (52,1 a 57kg)</option>
+			<option value="63">-63kg (57,1 a 63kg)</option>
+			<option value="69">-69kg (63,1 a 69kg)</option>
+			<option value="76">-76kg (69,1 a 76kg)</option>
+			<option value="84">-84kg (76,1 a 84kg)</option>
+			<option value="85">+84kg (84,1kg en adelante)</option>
+		</select>
+
+		<h4>Categoría de peso Masculina:</h4>
+		<select name="Categoría de peso Masc">
+			<option value="53">-53kg (hasta 53kg, solo SJr y Jr)</option>
+			<option value="59">-47kg (hasta 59kg)</option>
+			<option value="66">-52kg (59,1 a 66kg)</option>
+			<option value="74">-57kg (66,1 a 74kg)</option>
+			<option value="83">-63kg (74,1 a 83kg)</option>
+			<option value="93">-69kg (83,1 a 93kg)</option>
+			<option value="105">-76kg (93,1 a 105kg)</option>
+			<option value="120">-84kg (105,1 a 120kg)</option>
+			<option value="121">+84kg (120,1kg en adelante)</option>
+		</select>
+	<br> --->
+	<br>
+		<div>Confirmo haber clasificado en un torneo regional de mi asociación y encontrarme libre de sustancias dopantes incluídas en la lista de Sustancias Prohibidas de la WADA</div>
+		<input type="checkbox" name="Acepta" value="1"/>
+	<br>
+		<div>Confirmo poseer un buen estado de salud que me permita participar y me responsabilizo de cualquier accidente o evento que pueda presentar durante la competición nacional</div>
+		<input type="checkbox" name="Acepto" value="1">
+	<br>
+	<br>
+	<br>
+		<input type="submit" value="Enviar Inscripción"/>
+		<input type="reset" value="Limpiar Formulario"/>
+	</fieldset>
+	</form>
+</body>
+</html>

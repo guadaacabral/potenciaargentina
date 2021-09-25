@@ -1,0 +1,206 @@
+/*reset*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.grid{
+	display: grid;
+	grid-template-areas:
+	"redes redes redes"
+	"titulo titulo titulo"
+	"menu menu menu"
+	"federaciones central patrocinadores"
+	"pie pie pie";
+	grid-template-columns: 20% 66% 14%;
+	grid-template-rows: 0.2fr 0.2fr 1fr 2fr 7%;
+	grid-row-gap: 4px;
+	border: 3px;
+}
+
+header#sup{
+	grid-area: redes;
+	justify-self: stretch;
+	align-self: start;
+}
+div#titulo{
+	grid-area: titulo;
+}
+nav#menu{
+grid-area: menu;
+}
+
+div#lateral{
+	grid-area: federaciones;
+	align-self: center;
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+}
+
+section#central{
+grid-area: central;
+align-self: center;
+justify-self: center;
+}
+aside#pat{
+grid-area: patrocinadores;
+align-self: center;
+}
+footer#falpo{
+text-align: center;
+color: #323330;
+grid-area: pie;
+align-self: end;
+}
+
+aside p{
+	font-family: 'Bebas Neue', cursive;
+	text-align: left;
+	font-size: 1.7rem;
+}
+aside a{
+	text-decoration-line: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.4rem;
+	color: black;
+}
+section a{
+	text-decoration-line: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.8rem;
+	color: #1568A3;
+}
+section a:hover{
+	background-color: #323330;
+	color: white;
+}
+.header__logo{
+color: #1568A3;
+text-align: center;
+font-family: sans-serif;
+}
+
+.header__logo__titulo{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3.4rem;
+	text-align: center;
+	color: #1568A3;
+}
+
+.header__redes{
+display: block;
+text-align: right;
+border: none;
+padding: 10px 20px;
+background-color: #1568A3;
+}
+
+header nav a{
+display: inline;
+text-align: right;
+border: none;
+padding: 10px 20px;
+font-family: 'Bebas Neue', cursive;
+transition-duration: 0.4s;
+}
+
+header nav a:hover{
+	background: #323330;
+}
+
+.header__falpo{
+	text-align: left;
+	color: #BF9039;
+	font-size: 2.3rem;
+	font-family: 'Bebas Neue', cursive;
+	text-decoration: none;
+
+	position: fixed;
+	top: 0;
+	}
+
+nav ul ul {
+    display:none;
+    position: absolute;
+}
+ nav ul li:hover > ul{
+     display: block;
+ } 
+ nav ul ul li {
+     float: none;
+     width: 170px;
+     background-color: #323330;
+
+ }
+.menu--display{
+	margin: 0;
+  padding: 0;
+  list-style: none;
+	overflow: hidden;
+	color:#323330;
+}
+
+.menu__li{
+	/*float: left;
+	list-style: none;
+	display: inline-block;*/
+	color: white;
+  background-color: #1568A3;
+  text-transform: uppercase;
+  text-align: center;
+	/*width: 14.2%;*/
+	margin: 0;
+  padding: 8px;
+  /*position: relative;*/
+}
+
+.menu__li--index{
+	list-style: none;
+	color: white;
+  background-color: #1568A3;
+  text-transform: uppercase;
+  text-align: center;
+	/*margin: 0;
+  padding: 8px;
+  position: relative;*/
+  width: 100%;
+}
+
+.menu__flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-grow: 4;
+	align-items: center;
+	height: 70px;
+	background-color: #1568A3;
+}
+
+.menu__li:hover{
+	background-color: #323330;
+}
+
+.menu__li__a{
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: #1568A3;
+  padding: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu__li__a:hover{
+	background-color: #323330;
+}
+
+ul ul{
+	position: absolute;
+	display: none;
+}
+ul ul li{
+	widows: 100%;
+}
+
