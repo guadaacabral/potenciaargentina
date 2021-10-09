@@ -1,0 +1,307 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+@import "variables";
+
+/*Grid*/
+.grid{
+	display: grid;
+	grid-template-areas:
+	"redes redes redes"
+	"titulo titulo titulo"
+	"menu menu menu"
+	"federaciones central patrocinadores"
+	"pie pie pie";
+	grid-template-columns: 20% 66% 14%;
+	grid-template-rows: 0.2fr 0.2fr 1fr 2fr 7%;
+	grid-row-gap: 4px;
+	border: 3px;
+	}
+
+header#sup{
+	grid-area: redes;
+	justify-self: stretch;
+	align-self: start;
+	}
+div#titulo{
+	grid-area: titulo;
+	}
+nav#menu{
+grid-area: menu;
+	}
+
+div#lateral{
+	grid-area: federaciones;
+	align-self: center;
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+	}
+
+section#central{
+grid-area: central;
+align-self: center;
+justify-self: center;
+	}
+aside#pat{
+grid-area: patrocinadores;
+align-self: center;
+	}
+footer#falpo{
+text-align: center;
+color: $gris-ppal;
+grid-area: pie;
+align-self: end;
+	}
+/* Fin del grid*/
+
+aside{
+	p{
+	font-family: 'Bebas Neue', cursive;
+	text-align: left;
+	font-size: 1.7rem;
+	}
+	a{
+	text-decoration-line: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.4rem;
+	color: black;
+	}
+}
+section{
+	a{
+	text-decoration-line: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.8rem;
+	color: $color-principal;
+	}
+	a:hover{
+	background-color: $gris-ppal;
+	color: white;
+	}
+}
+.header__logo{
+color: $color-principal;
+text-align: center;
+font-family: sans-serif;
+}
+
+.header__logo__titulo{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 4.5rem;
+	text-align: center;
+	color: $color-principal;
+}
+
+.header__redes{
+display: block;
+text-align: right;
+border: none;
+padding: 10px 20px;
+background-color: $color-principal;
+}
+
+.header__falpo{
+	text-align: left;
+	color: #BF9039;
+	font-size: 4rem;
+	font-family: 'Bebas Neue', cursive;
+	text-decoration: none;
+	position: fixed;
+	top: 0; 
+	}
+
+button{
+	background-color: $color-principal;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2rem;
+	color: white;
+	transition: all 0.3s ease-in-out;
+}
+button:hover{
+	background: $gris-ppal;
+	color: white;
+}
+header nav {
+	a{
+display: inline;
+text-align: right;
+border: none;
+padding: 10px 20px;
+font-family: 'Bebas Neue', cursive;
+}
+	a:hover{
+	background: $gris-ppal;
+	width: 250px
+}
+}
+
+nav{
+	ul{
+		ul {
+		    display:none;
+		    position: absolute;
+			}
+		li:hover > ul{
+	     display: block;
+	 		} 
+ 		ul li {
+		     float: none;
+		     width: 170px;
+		     background-color: $gris-ppal;
+ 			}
+ 		}
+ 	}
+
+ .menu--display{
+	margin: 0;
+  padding: 0;
+  list-style: none;
+	overflow: hidden;
+	color: $gris-ppal;
+	}
+
+.menu__li{
+	color: white;
+  background-color: $color-principal;
+  text-transform: uppercase;
+  text-align: center;
+	margin: 0;
+  padding: 8px;
+}
+
+.menu__li--index{
+	list-style: none;
+	color: white;
+  background-color: $color-principal;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.menu__flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-grow: 4;
+	align-items: center;
+	height: 70px;
+	background-color: $color-principal;
+}
+
+.menu__li:hover{
+	background-color: $gris-ppal;
+}
+
+.menu__li__a{
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: $color-principal;
+  padding: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu__li__a:hover{
+	background-color: $gris-ppal;
+}
+.videonac {
+	width: 500px;
+	text-align: center ;
+}
+
+ul{
+	ul{
+	position: absolute;
+	display: none;
+	}
+	ul li{
+	widows: 100%;
+	}
+}
+
+/*Media queries*/
+/*Pantallas panorámicas*/
+@media only screen and (max-width: 1200px) {
+	}
+/*Tablet horizontal y notbook*/
+@media only screen and (max-width: 1024px) {
+	body{
+	}
+	.videonac {
+	width: 330px;
+	}
+}
+/*Tablets*/
+@media only screen and (max-width: 600px) {
+	.grid{
+	display: grid;
+	grid-template-areas:
+	"redes redes"
+	"titulo titulo"
+	"menu menu"
+	"federaciones federaciones"
+	"central central"
+	"patrocinadores patrocinadores"
+	"pie pie";
+	grid-template-columns: 100%;
+	grid-template-rows: 7%% 10% 6% 50% 20% 7%;
+	grid-row-gap: 4px;
+	border: 3px;
+	}
+	.videonac {
+	width: 300px;
+}
+}
+/*Mobile horizontal*/
+@media only screen and (max-width: 480px) {
+.grid{
+	display: grid;
+	grid-template-areas:
+	"redes redes"
+	"titulo titulo"
+	"menu menu"
+	"federaciones federaciones"
+	"central"
+	"patrocinadores patrocinadores"
+	"pie pie";
+	grid-template-columns: 100%;
+	grid-template-rows: 7% 10% 7% 49% 20% 7%;
+	grid-row-gap: 4px;
+	border: 3px;
+	}
+}
+/*Mobile vertical*/
+@media only screen and (max-width: 320px) {
+.header__redes{
+	display: inline;
+	text-align: left;
+	border: none;
+	padding: 10px 20px;
+	background-color: $color-principal;
+	width: 100%;
+}
+.header__falpo{
+	display: none;
+	}
+	.menu__flex{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-grow: 4;
+	align-items: center;
+	height: 70px;
+	background-color: $color-principal;
+}
+.videonac {
+	width: 200px;
+}
+}
