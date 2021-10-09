@@ -4,7 +4,10 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-
+html{
+	font-size: 62.5%;
+}
+/*grid*/
 .grid{
 	display: grid;
 	grid-template-areas:
@@ -53,6 +56,7 @@ color: #323330;
 grid-area: pie;
 align-self: end;
 }
+/*fin del grid*/
 
 aside p{
 	font-family: 'Bebas Neue', cursive;
@@ -83,7 +87,7 @@ font-family: sans-serif;
 
 .header__logo__titulo{
 	font-family: 'Bebas Neue', cursive;
-	font-size: 3.4rem;
+	font-size: 4.5rem;
 	text-align: center;
 	color: #1568A3;
 }
@@ -96,28 +100,44 @@ padding: 10px 20px;
 background-color: #1568A3;
 }
 
+button{
+	background-color: #1568A3;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2rem;
+	color: white;
+	transition: all 0.3s ease-in-out;
+}
+button:hover{
+	background: #323330;
+	color: white;
+}
+
 header nav a{
 display: inline;
 text-align: right;
 border: none;
 padding: 10px 20px;
 font-family: 'Bebas Neue', cursive;
-transition-duration: 0.4s;
 }
 
 header nav a:hover{
 	background: #323330;
+	width: 250px
 }
-
+/*
+@keyframes nombre {
+  from {background-color:#1568A3;}
+  to {background-color: #78BCDF;}
+}
+*/
 .header__falpo{
 	text-align: left;
 	color: #BF9039;
-	font-size: 2.3rem;
+	font-size: 4rem;
 	font-family: 'Bebas Neue', cursive;
 	text-decoration: none;
-
 	position: fixed;
-	top: 0;
+	top: 0; 
 	}
 
 nav ul ul {
@@ -142,17 +162,12 @@ nav ul ul {
 }
 
 .menu__li{
-	/*float: left;
-	list-style: none;
-	display: inline-block;*/
 	color: white;
   background-color: #1568A3;
   text-transform: uppercase;
   text-align: center;
-	/*width: 14.2%;*/
 	margin: 0;
   padding: 8px;
-  /*position: relative;*/
 }
 
 .menu__li--index{
@@ -161,10 +176,8 @@ nav ul ul {
   background-color: #1568A3;
   text-transform: uppercase;
   text-align: center;
-	/*margin: 0;
-  padding: 8px;
-  position: relative;*/
   width: 100%;
+  font-size: 1.8rem;
 }
 
 .menu__flex{
@@ -196,6 +209,11 @@ nav ul ul {
 	background-color: #323330;
 }
 
+.videonac {
+	width: 500px;
+	text-align: center ;
+}
+
 ul ul{
 	position: absolute;
 	display: none;
@@ -204,3 +222,84 @@ ul ul li{
 	widows: 100%;
 }
 
+/*Media queries
+/*Pantallas panorámicas*/
+@media only screen and (max-width: 1200px) {
+	body{
+	}
+}
+}
+/*Tablet horizontal y notbook*/
+@media only screen and (max-width: 1024px) {
+	body{
+	}
+	.videonac {
+	width: 330px;
+}
+}
+/*Tablets*/
+@media only screen and (max-width: 600px) {
+	.grid{
+	display: grid;
+	grid-template-areas:
+	"redes redes"
+	"titulo titulo"
+	"menu menu"
+	"federaciones federaciones"
+	"central central"
+	"patrocinadores patrocinadores"
+	"pie pie";
+	grid-template-columns: 100%;
+	grid-template-rows: 7%% 10% 6% 50% 20% 7%;
+	grid-row-gap: 4px;
+	border: 3px;
+	}
+	.videonac {
+	width: 300px;
+}
+}
+/*Mobile horizontal*/
+@media only screen and (max-width: 480px) {
+.grid{
+	display: grid;
+	grid-template-areas:
+	"redes redes"
+	"titulo titulo"
+	"menu menu"
+	"federaciones federaciones"
+	"central"
+	"patrocinadores patrocinadores"
+	"pie pie";
+	grid-template-columns: 100%;
+	grid-template-rows: 7% 10% 7% 49% 20% 7%;
+	grid-row-gap: 4px;
+	border: 3px;
+	}
+}
+/*Mobile vertical*/
+@media only screen and (max-width: 320px) {
+.header__redes{
+	display: inline;
+	text-align: left;
+	border: none;
+	padding: 10px 20px;
+	background-color: #1568A3;
+	width: 100%;
+}
+.header__falpo{
+	display: none;
+	}
+	.menu__flex{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-grow: 4;
+	align-items: center;
+	height: 70px;
+	background-color: #1568A3;
+}
+.videonac {
+	width: 200px;
+}
+}
