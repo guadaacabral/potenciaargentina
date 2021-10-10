@@ -1,305 +1,287 @@
-/*reset*/
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-html{
-	font-size: 62.5%;
-}
-/*grid*/
-.grid{
-	display: grid;
-	grid-template-areas:
-	"redes redes redes"
-	"titulo titulo titulo"
-	"menu menu menu"
-	"federaciones central patrocinadores"
-	"pie pie pie";
-	grid-template-columns: 20% 66% 14%;
-	grid-template-rows: 0.2fr 0.2fr 1fr 2fr 7%;
-	grid-row-gap: 4px;
-	border: 3px;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-header#sup{
-	grid-area: redes;
-	justify-self: stretch;
-	align-self: start;
-}
-div#titulo{
-	grid-area: titulo;
-}
-nav#menu{
-grid-area: menu;
-}
+html {
+  font-size: 62.5%; }
 
-div#lateral{
-	grid-area: federaciones;
-	align-self: center;
-	text-align: center;
-	font-family: 'Bebas Neue', cursive;
-}
+/*Grid*/
+.grid {
+  display: grid;
+  grid-template-areas: "redes redes redes" "titulo titulo titulo" "menu menu menu" "federaciones central patrocinadores" "federaciones-2 central-2 patrocinadores-2" "federaciones-2 central-3 central-3" "pie pie pie";
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 0.2fr 0.2fr 1fr 2fr 0.2fr 0.1fr 7%;
+  grid-row-gap: 4px;
+  border: 3px; }
 
-section#central{
-grid-area: central;
-align-self: center;
-justify-self: center;
-}
-aside#pat{
-grid-area: patrocinadores;
-align-self: center;
-}
-footer#falpo{
-text-align: center;
-color: #323330;
-grid-area: pie;
-align-self: end;
-}
-/*fin del grid*/
+header#sup {
+  grid-area: redes;
+  justify-self: stretch;
+  align-self: start; }
 
-aside p{
-	font-family: 'Bebas Neue', cursive;
-	text-align: left;
-	font-size: 1.7rem;
-}
-aside a{
-	text-decoration-line: none;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.4rem;
-	color: black;
-}
-section a{
-	text-decoration-line: none;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.8rem;
-	color: #1568A3;
-}
-section a:hover{
-	background-color: #323330;
-	color: white;
-}
-.header__logo{
-color: #1568A3;
-text-align: center;
-font-family: sans-serif;
-}
+div#titulo {
+  grid-area: titulo; }
 
-.header__logo__titulo{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 4.5rem;
-	text-align: center;
-	color: #1568A3;
-}
+nav#menu {
+  grid-area: menu; }
 
-.header__redes{
-display: block;
-text-align: right;
-border: none;
-padding: 10px 20px;
-background-color: #1568A3;
-}
+div#lateral {
+  grid-area: federaciones;
+  align-self: center;
+  text-align: center;
+  font-family: "Bebas Neue", cursive; }
+  div#lateral img {
+    width: 140px; }
 
-button{
-	background-color: #1568A3;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 2rem;
-	color: white;
-	transition: all 0.3s ease-in-out;
-}
-button:hover{
-	background: #323330;
-	color: white;
-}
+div#lateral-2 {
+  grid-area: federaciones-2;
+  align-self: center;
+  text-align: center;
+  font-family: "Bebas Neue", cursive; }
+  div#lateral-2 img {
+    width: 140px; }
 
-header nav a{
-display: inline;
-text-align: right;
-border: none;
-padding: 10px 20px;
-font-family: 'Bebas Neue', cursive;
-}
+section#central {
+  grid-area: central;
+  align-self: center;
+  justify-self: center; }
 
-header nav a:hover{
-	background: #323330;
-	width: 250px
-}
-/*
-@keyframes nombre {
-  from {background-color:#1568A3;}
-  to {background-color: #78BCDF;}
-}
-*/
-.header__falpo{
-	text-align: left;
-	color: #BF9039;
-	font-size: 4rem;
-	font-family: 'Bebas Neue', cursive;
-	text-decoration: none;
-	position: fixed;
-	top: 0; 
-	}
+section#central-2 {
+  grid-area: central-2;
+  align-self: left;
+  justify-self: left; }
+
+section#central-3 {
+  grid-area: central-3;
+  align-self: left;
+  justify-self: left; }
+
+aside#pat {
+  grid-area: patrocinadores;
+  align-self: center; }
+  aside#pat img {
+    height: 170px; }
+  aside#pat h2 {
+    text-align: center;
+    font-size: 2rem; }
+  aside#pat a {
+    text-align: center;
+    font-size: 2rem; }
+  aside#pat p {
+    text-align: left;
+    font-size: 2.5rem; }
+
+aside#pat-2 {
+  grid-area: patrocinadores-2;
+  align-self: center; }
+  aside#pat-2 img {
+    height: 170px; }
+  aside#pat-2 h2 {
+    text-align: center;
+    font-size: 2.5rem; }
+  aside#pat-2 a {
+    text-align: center;
+    font-size: 2rem; }
+
+footer#falpo {
+  text-align: center;
+  color: #323330;
+  grid-area: pie;
+  align-self: end; }
+  footer#falpo h3 {
+    font-size: 2rem; }
+
+/* Fin del grid*/
+aside p {
+  font-family: "Bebas Neue", cursive;
+  text-align: left;
+  font-size: 1.7rem; }
+
+aside a {
+  text-decoration-line: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.4rem;
+  color: black; }
+
+section a {
+  text-decoration-line: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  color: #1568A3; }
+
+section a:hover {
+  background-color: #323330;
+  color: white; }
+
+.header__logo {
+  color: #1568A3;
+  text-align: center;
+  font-family: sans-serif; }
+
+.header__logo__titulo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4.5rem;
+  text-align: center;
+  color: #1568A3; }
+
+.header__redes {
+  display: block;
+  text-align: right;
+  border: none;
+  padding: 10px 20px;
+  background-color: #1568A3; }
+
+.header__falpo {
+  text-align: left;
+  color: #BF9039;
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  position: fixed;
+  top: 0; }
+
+button {
+  background-color: #1568A3;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease-in-out; }
+
+button:hover {
+  background: #323330;
+  color: white; }
+
+header nav a {
+  display: inline;
+  text-align: right;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Bebas Neue", cursive; }
+
+header nav a:hover {
+  width: 250px; }
 
 nav ul ul {
-    display:none;
-    position: absolute;
-}
- nav ul li:hover > ul{
-     display: block;
- } 
- nav ul ul li {
-     float: none;
-     width: 170px;
-     background-color: #323330;
+  display: none;
+  position: absolute; }
 
- }
-.menu--display{
-	margin: 0;
+nav ul li:hover > ul {
+  display: block; }
+
+nav ul ul li {
+  float: none;
+  width: 170px;
+  background-color: #323330; }
+
+.menu--display {
+  margin: 0;
   padding: 0;
   list-style: none;
-	overflow: hidden;
-	color:#323330;
-}
+  overflow: hidden;
+  color: #323330; }
 
-.menu__li{
-	color: white;
+.menu__li {
+  color: white;
   background-color: #1568A3;
   text-transform: uppercase;
   text-align: center;
-	margin: 0;
-  padding: 8px;
-}
+  margin: 0;
+  padding: 8px; }
 
-.menu__li--index{
-	list-style: none;
-	color: white;
+.menu__li--index {
+  list-style: none;
+  color: white;
   background-color: #1568A3;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  font-size: 1.8rem;
-}
+  font-size: 1.8rem; }
 
-.menu__flex{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	flex-grow: 4;
-	align-items: center;
-	height: 70px;
-	background-color: #1568A3;
-}
+.menu__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-grow: 4;
+  align-items: center;
+  height: 70px;
+  background-color: #1568A3; }
 
-.menu__li:hover{
-	background-color: #323330;
-}
+.menu__li:hover {
+  background-color: #323330; }
 
-.menu__li__a{
+.menu__li__a {
   text-align: center;
   display: block;
   color: white;
   background-color: #1568A3;
   padding: 8px;
   text-transform: uppercase;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-.menu__li__a:hover{
-	background-color: #323330;
-}
+.menu__li__a:hover {
+  background-color: #323330; }
 
 .videonac {
-	width: 500px;
-	text-align: center ;
-}
+  width: 500px;
+  text-align: center; }
 
-ul ul{
-	position: absolute;
-	display: none;
-}
-ul ul li{
-	widows: 100%;
-}
+ul ul {
+  position: absolute;
+  display: none; }
 
-/*Media queries
-/*Pantallas panorámicas*/
-@media only screen and (max-width: 1200px) {
-	body{
-	}
-}
-}
+ul ul li {
+  widows: 100%; }
+
+/*Media queries*/
 /*Tablet horizontal y notbook*/
 @media only screen and (max-width: 1024px) {
-	body{
-	}
-	.videonac {
-	width: 330px;
-}
-}
+  .videonac {
+    width: 330px; } }
+
 /*Tablets*/
 @media only screen and (max-width: 600px) {
-	.grid{
-	display: grid;
-	grid-template-areas:
-	"redes redes"
-	"titulo titulo"
-	"menu menu"
-	"federaciones federaciones"
-	"central central"
-	"patrocinadores patrocinadores"
-	"pie pie";
-	grid-template-columns: 100%;
-	grid-template-rows: 7%% 10% 6% 50% 20% 7%;
-	grid-row-gap: 4px;
-	border: 3px;
-	}
-	.videonac {
-	width: 300px;
-}
-}
+  .grid {
+    display: grid;
+    grid-template-areas: "redes redes" "titulo titulo" "menu menu" "federaciones federaciones" "central central" "patrocinadores patrocinadores" "pie pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 6% 50% 20% 7%;
+    grid-row-gap: 4px;
+    border: 3px; }
+  .videonac {
+    width: 300px; } }
+
 /*Mobile horizontal*/
 @media only screen and (max-width: 480px) {
-.grid{
-	display: grid;
-	grid-template-areas:
-	"redes redes"
-	"titulo titulo"
-	"menu menu"
-	"federaciones federaciones"
-	"central"
-	"patrocinadores patrocinadores"
-	"pie pie";
-	grid-template-columns: 100%;
-	grid-template-rows: 7% 10% 7% 49% 20% 7%;
-	grid-row-gap: 4px;
-	border: 3px;
-	}
-}
+  .grid {
+    display: grid;
+    grid-template-areas: "redes redes" "titulo titulo" "menu menu" "federaciones federaciones" "central" "patrocinadores patrocinadores" "pie pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 10% 7% 49% 20% 7%;
+    grid-row-gap: 4px;
+    border: 3px; } }
+
 /*Mobile vertical*/
 @media only screen and (max-width: 320px) {
-.header__redes{
-	display: inline;
-	text-align: left;
-	border: none;
-	padding: 10px 20px;
-	background-color: #1568A3;
-	width: 100%;
-}
-.header__falpo{
-	display: none;
-	}
-	.menu__flex{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	flex-grow: 4;
-	align-items: center;
-	height: 70px;
-	background-color: #1568A3;
-}
-.videonac {
-	width: 200px;
-}
-}
+  .header__redes {
+    display: inline;
+    text-align: left;
+    border: none;
+    padding: 10px 20px;
+    background-color: #1568A3;
+    width: 100%; }
+  .header__falpo {
+    display: none; }
+  .menu__flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-grow: 4;
+    align-items: center;
+    height: 70px;
+    background-color: #1568A3; }
+  .videonac {
+    width: 300px;
+    aling: center; } }

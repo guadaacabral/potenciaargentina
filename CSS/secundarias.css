@@ -30,11 +30,14 @@ position: relative;
 	background-color: color:#BF9039;
 }
 
-/*No puedo aplicarlo*/
 ul#cd{
 	text-align: center;
  	font-family: 'Bebas Neue', cursive;
- 	font-size: 2.5!;
+ 	font-size: 2.5rem;
+ 	text-decoration: none;
+}
+li#cd{
+ 	text-decoration: none;
 }
 
 .titulo{
@@ -230,4 +233,29 @@ text-align: center;
 	display: flex;
 	justify-content: space-around;
 	align-items: left;
+}
+table{
+	align-items: center;
+}
+table caption{
+	font-size: 2rem;
+}
+table tr{
+	font-size: 1.5rem;
+	text-align: center;
+}
+table tr th{
+	font-size: 1.5rem;
+	text-align: center;
+}
+table tr td{
+	font-size: 1.5rem;
+	text-align: center;
+}
+table tr td ul li{
+	font-size: 1.5rem;
+	text-align: center;
+}
+table tr td ul{
+	list-style-type: none;
 }
