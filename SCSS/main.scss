@@ -52,7 +52,14 @@ section#central{
 grid-area: central;
 align-self: center;
 justify-self: center;
-	}
+}
+
+a#central{
+text-decoration-line: none;
+text-align: center;
+font-family: $fuente-principal;
+font-size: 2rem;
+}
 section#central-2 {
   grid-area: central-2;
   align-self: left;
@@ -63,23 +70,27 @@ section#central-2 {
   align-self: left;
   justify-self: left;
   }
-aside#pat{
+div#pat{
 grid-area: patrocinadores;
 align-self: center;
+text-decoration-line: none;
 	img{
 	height:170px;
 	}
 	h2{
 	text-align: center;
 	font-size: 2rem;
+	text-decoration-line: none;
 	}
 	a{
 	text-align: center;
 	font-size: 2rem;
+	text-decoration-line: none;
 	}
 	p{
-	text-align: left;
+	text-align: center;
 	font-size: 2.5rem;
+	font-family: $fuente-principal;
 	}
 	}
 aside#pat-2{
@@ -97,7 +108,7 @@ align-self: center;
 	font-size: 2rem;
 	}
 	}
-footer#falpo{
+div#falpo{
 text-align: center;
 color: $gris-ppal;
 grid-area: pie;

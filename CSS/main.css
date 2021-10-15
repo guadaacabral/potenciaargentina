@@ -47,6 +47,12 @@ section#central {
   align-self: center;
   justify-self: center; }
 
+a#central {
+  text-decoration-line: none;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem; }
+
 section#central-2 {
   grid-area: central-2;
   align-self: left;
@@ -57,20 +63,24 @@ section#central-3 {
   align-self: left;
   justify-self: left; }
 
-aside#pat {
+div#pat {
   grid-area: patrocinadores;
-  align-self: center; }
-  aside#pat img {
+  align-self: center;
+  text-decoration-line: none; }
+  div#pat img {
     height: 170px; }
-  aside#pat h2 {
+  div#pat h2 {
     text-align: center;
-    font-size: 2rem; }
-  aside#pat a {
+    font-size: 2rem;
+    text-decoration-line: none; }
+  div#pat a {
     text-align: center;
-    font-size: 2rem; }
-  aside#pat p {
-    text-align: left;
-    font-size: 2.5rem; }
+    font-size: 2rem;
+    text-decoration-line: none; }
+  div#pat p {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", cursive; }
 
 aside#pat-2 {
   grid-area: patrocinadores-2;
@@ -84,12 +94,12 @@ aside#pat-2 {
     text-align: center;
     font-size: 2rem; }
 
-footer#falpo {
+div#falpo {
   text-align: center;
   color: #323330;
   grid-area: pie;
   align-self: end; }
-  footer#falpo h3 {
+  div#falpo h3 {
     font-size: 2rem; }
 
 /* Fin del grid*/
